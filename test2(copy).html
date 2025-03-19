@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Content Page</title>
+    <meta name="description" content="A page with video and content sections.">
+    <meta name="keywords" content="video, content, sections">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+            color: #080606;
+        }
+
+        header {
+            background: #dce2e6;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #35424a;
+        }
+
+        .image-container {
+            position: relative;
+            max-width: 100%;
+            background: #000;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .page-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .page-button {
+            display: block;
+            width: 150px;
+            padding: 10px 20px;
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .page-button:hover {
+            background: #2c3e50;
+        }
+
+        .comment-section {
+            margin-top: 40px;
+        }
+
+        .comment-section h2 {
+            color: #35424a;
+        }
+
+        .comment-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .comment-section input[type="text"], .comment-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .comment-section input[type="submit"] {
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .comment-section input[type="submit"]:hover {
+            background: #2c3e50;
+        }
+
+        .comments {
+            margin-top: 20px;
+        }
+
+        .comment {
+            background: #e9ecef;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .comment .comment-author {
+            font-weight: bold;
+        }
+
+        .delete-button {
+            background: #e74c3c;
+            color: #ffffff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .delete-button:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ANIMAL DOCUMENTARY: MAMMALS</h1>
+</header>
+
+<div class="content">
+    <div class="section">
+        <h2>Animal Documentary CH.1: Mammals</h2>
+        <p></p>
+    </div>
+
+    <div class="section image-container">
+        <img src="animals.png" alt="Reptiles Image">
+    </div>
+
+    <div class="section">
+        <h2>The Marvel of Mammals: Nature’s Most Versatile Creatures</h2>
+        <p>Mammals are among the most diverse and adaptable creatures on Earth. From the vast savannas of Africa to the icy tundras of the Arctic, they have conquered nearly every habitat. What sets them apart? Their warm-blooded nature, fur-covered bodies, and the ability to nurse their young. In this documentary, we take a journey through the world of mammals, exploring their extraordinary survival strategies, intelligence, and close-knit social structures.</p>
+    </div>
+
+    <div class="section">
+        <h2>Chapter 1: Origins and Evolution</h2>
+        <p>The story of mammals dates back to the age of the dinosaurs. Small, nocturnal creatures scurried beneath the feet of towering reptiles, waiting for their chance to rise. When the age of the dinosaurs ended, mammals diversified into an incredible array of species, ranging from tiny rodents to colossal whales.</p>
+    </div>
+
+    <div class="section">
+        <h2>Chapter 2: Mammalian Adaptations</h2>
+        <p>One of the key reasons for the success of mammals is their adaptability. Some, like the Arctic fox, have thick fur and compact bodies to conserve heat in extreme cold, while others, such as the fennec fox, have large ears to dissipate heat in desert climates. Mammals have also evolved unique ways of moving—bats use echolocation for flight, dolphins navigate with sonar in the ocean, and cheetahs use incredible bursts of speed to catch prey.</p>
+    </div>
+
+    <div>
+        <h2>Chapter 3: Intelligence and Social Structures</h2>
+        <p>Mammals exhibit some of the most complex behaviors in the animal kingdom. Elephants mourn their dead, dolphins recognize themselves in mirrors, and chimpanzees use tools to solve problems. Social bonds are crucial for many species, with packs, prides, and pods working together to hunt, protect one another, and raise their young.</p>
+    </div>
+
+    <div>
+        <h2>Chapter 4: The Role of Mammals in Ecosystems</h2>
+        <p>As key players in their environments, mammals help maintain ecological balance. Predators regulate prey populations, while herbivores shape plant life. Beavers modify landscapes by building dams, and bats aid in pollination and insect control. The extinction or endangerment of certain mammals can disrupt entire ecosystems.</p>
+    </div>
+
+    <div>
+        <h2>Conclusion: The Future of Mammals</h2>
+        <p>Despite their resilience, mammals face unprecedented threats from habitat destruction, climate change, and poaching. Conservation efforts are crucial to protecting these remarkable creatures. Through awareness, scientific research, and action, we can ensure that future generations continue to marvel at the wonders of mammals.</p>
+    </div>
+    
+    <div class="comment-section">
+        <h2>Comments</h2>
+        <form id="commentForm">
+            <input type="text" id="author" name="author" placeholder="Your Name" required>
+            <textarea id="comment" name="comment" rows="4" placeholder="Your Comment" required></textarea>
+            <input type="submit" value="Submit Comment">
+        </form>
+        <div class="comments" id="comments">
+            <!-- Comments will be displayed here -->
+        </div>
+    </div>
+
+    <div class="page-buttons">
+        <a href="test2(copy).html" class="page-button">Previous Page</a>
+        <a href="page3(copy).html" class="page-button">Next Page</a>
+    </div>
+</div>
+
+<script>
+    // Load comments from local storage on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        displayComments(comments);
+    });
+
+    document.getElementById('commentForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+
+        // Get the values from the form
+        const author = document.getElementById('author').value;
+        const comment = document.getElementById('comment').value;
+
+        // Create a new comment object
+        const commentObject = { author, comment };
+
+        // Get existing comments from local storage
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+
+        // Add the new comment to the comments array
+        comments.push(commentObject);
+
+        // Save the updated comments array to local storage
+        localStorage.setItem('comments', JSON.stringify(comments));
+
+        // Display the updated comments
+        displayComments(comments);
+
+        // Clear the form fields
+        document.getElementById('commentForm').reset();
+    });
+
+    function displayComments(comments) {
+        const commentsContainer = document.getElementById('comments');
+        commentsContainer.innerHTML = '';
+
+        comments.forEach((comment, index) => {
+            const commentElement = document.createElement('div');
+            commentElement.classList.add('comment');
+            commentElement.innerHTML = `
+                <div class="comment-author">${comment.author}</div>
+                <div class="comment-text">${comment.comment}</div>
+                <button class="delete-button" onclick="deleteComment(${index})">Delete</button>
+            `;
+            commentsContainer.appendChild(commentElement);
+        });
+    }
+
+    function deleteComment(index) {
+        // Get existing comments from local storage
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+
+        // Remove the comment from the array
+        comments.splice(index, 1);
+
+        // Save the updated comments array to local storage
+        localStorage.setItem('comments', JSON.stringify(comments));
+
+        // Display the updated comments
+        displayComments(comments);
+    }
+</script>
+
+</body>
+</html>
